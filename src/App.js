@@ -45,6 +45,7 @@ function App() {
       <Header name="Sneha" />
       <Main foods={foods}/>
       <Footer/>
+      <h3>Test</h3>
    
     </div>
   );
