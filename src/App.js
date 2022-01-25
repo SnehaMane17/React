@@ -46,6 +46,7 @@ function App() {
       <Main foods={foods}/>
       <Footer/>
       <h3>Test</h3>
+      <h4>Test 2</h4>
    
     </div>
   );
