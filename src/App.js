@@ -1,18 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
-function SecretComponent(){
-  return <h1>This super secret component for authorized users</h1>;
-}
-function RegularComponent(){
-  return <h1>This regular component</h1>;
-}
+
 function App(props) {
-  if(props.authorized){
-    return <SecretComponent/>;
-  }else{
-    return <RegularComponent/>;
-  }
+  const [emotion, setEmotion] = useState("Good");
+  return(
+    <>
+    <h1>I'm feeling {emotion}</h1>
+    <button onClick={()=>setEmotion("Better")}>
+     Better
+    </button>
+    <button onClick={()=>setEmotion("Best")}>
+     Best
+    </button>
+  </>
+  );
+ 
 }
 
 export default App;

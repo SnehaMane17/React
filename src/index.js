@@ -1,10 +1,10 @@
-import react from 'react';
+import react, {useState} from 'react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from "./App";
 
   ReactDOM.render(
-  <App authorized={true}/>,
+  <App />,
   document.getElementById('root')
 );
 
